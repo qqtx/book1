@@ -1,7 +1,7 @@
 if
-(ÍøÒ³Á´½Ó:find("http://xiangkeyear.gz01.bdysite.com/x/happy/nill.html")) then
-  ÍøÒ³ºóÍË()
- ½øÈë×ÓÒ³Ãæ("¹¤¾ß")
+(ç½‘é¡µé“¾æ¥:find("http://xiangkeyear.gz01.bdysite.com/x/happy/nill.html")) then
+  ç½‘é¡µåé€€()
+ è¿›å…¥å­é¡µé¢("å·¥å…·")
 end
 
 
@@ -10,34 +10,34 @@ end
 import "android.text.format.Formatter"
 function Too_young()
   webView.setDownloadListener{onDownloadStart=function(url,userAgent,contentDisposition,mimetype,contentLength)
-    ÎÄ¼şÃû=URLUtil.guessFileName(url, contentDisposition, mimeType);
-    ÏÂÔØÁ´½Ó=url
-   ÎÄ¼şÀàĞÍ=mimetype
-    ÎÄ¼ş´óĞ¡=Formatter.formatFileSize(this, contentLength)
-    ÏÂÔØ()
+    æ–‡ä»¶å=URLUtil.guessFileName(url, contentDisposition, mimeType);
+    ä¸‹è½½é“¾æ¥=url
+   æ–‡ä»¶ç±»å‹=mimetype
+    æ–‡ä»¶å¤§å°=Formatter.formatFileSize(this, contentLength)
+    ä¸‹è½½()
     function adm(dlurl)
       this.startActivity(Intent().setAction("android.intent.action.SEND").setType("text/*").putExtra("android.intent.extra.TEXT", dlurl).setClassName("com.dv.adm.pay", "com.dv.adm.pay.AEditor"));
     end
   end}
 end
 
-Too_young()--³õÊ¼»¯
-function ÏÂÔØ()--ÒÔÏÂ´úÂë¿É×ÔÓÉ±à¼­£¬Ã¿µ±¼àÌıµ½ÏÂÔØÈÎÎñÊ±»áÔËĞĞÒÔÏÂ´úÂë¡£¿ÉÓÃµÄÖµ£ºurl,userAgent,contentDisposition,mimetype,contentLength,ÎÄ¼şÃû,ÎÄ¼şÀàĞÍ,ÎÄ¼ş´óĞ¡,ÏÂÔØÁ´½Ó
-  ¶Ô»°¿ò()
-  .ÉèÖÃ±êÌâ("BOOKµç×ÓÊéÏÂÔØ")
-  .ÉèÖÃÏûÏ¢("ÎÄ¼şÀàĞÍ£ºepub(Í¨ÓÃµç×ÓÊé¸ñÊ½)".."\nÎÄ¼ş´óĞ¡£º"..ÎÄ¼ş´óĞ¡.."\nÏÂÔØÂ·¾¶:¸ùÄ¿Â¼/BOOKµç×ÓÊéÏÂÔØ")
-  .ÉèÖÃ»ı¼«°´Å¥("ÏÂÔØ",function()
-    downloadManager=activity.getSystemService(Context.DOWNLOAD_SERVICE);--µ÷ÓÃÏµÍ³ÏÂÔØÆ÷ÏÂÔØ
-    url=Uri.parse(ÏÂÔØÁ´½Ó);
+Too_young()--åˆå§‹åŒ–
+function ä¸‹è½½()--ä»¥ä¸‹ä»£ç å¯è‡ªç”±ç¼–è¾‘ï¼Œæ¯å½“ç›‘å¬åˆ°ä¸‹è½½ä»»åŠ¡æ—¶ä¼šè¿è¡Œä»¥ä¸‹ä»£ç ã€‚å¯ç”¨çš„å€¼ï¼šurl,userAgent,contentDisposition,mimetype,contentLength,æ–‡ä»¶å,æ–‡ä»¶ç±»å‹,æ–‡ä»¶å¤§å°,ä¸‹è½½é“¾æ¥
+  å¯¹è¯æ¡†()
+  .è®¾ç½®æ ‡é¢˜("BOOKç”µå­ä¹¦ä¸‹è½½")
+  .è®¾ç½®æ¶ˆæ¯("æ–‡ä»¶ç±»å‹ï¼šepub(é€šç”¨ç”µå­ä¹¦æ ¼å¼)".."\næ–‡ä»¶å¤§å°ï¼š"..æ–‡ä»¶å¤§å°.."\nä¸‹è½½è·¯å¾„:æ ¹ç›®å½•/BOOKç”µå­ä¹¦ä¸‹è½½")
+  .è®¾ç½®ç§¯ææŒ‰é’®("ä¸‹è½½",function()
+    downloadManager=activity.getSystemService(Context.DOWNLOAD_SERVICE);--è°ƒç”¨ç³»ç»Ÿä¸‹è½½å™¨ä¸‹è½½
+    url=Uri.parse(ä¸‹è½½é“¾æ¥);
     request=DownloadManager.Request(url);
     request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE|DownloadManager.Request.NETWORK_WIFI);
-    request.setDestinationInExternalPublicDir("BOOKµç×ÓÊéÏÂÔØ",ÎÄ¼şÃû);
+    request.setDestinationInExternalPublicDir("BOOKç”µå­ä¹¦ä¸‹è½½",æ–‡ä»¶å);
     request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
     downloadManager.enqueue(request);
   end)
-  .ÉèÖÃÏû¼«°´Å¥("È¡Ïû")
---  .ÉèÖÃÖĞÁ¢°´Å¥("ADMÏÂÔØ",function()
-   -- adm(ÏÂÔØÁ´½Ó)
+  .è®¾ç½®æ¶ˆææŒ‰é’®("å–æ¶ˆ")
+--  .è®¾ç½®ä¸­ç«‹æŒ‰é’®("ADMä¸‹è½½",function()
+   -- adm(ä¸‹è½½é“¾æ¥)
 --  end)
-  .ÏÔÊ¾()
+  .æ˜¾ç¤º()
 end
