@@ -73,6 +73,45 @@ HG=
         layout_height="1dp";
       };
       -- -------------------按钮①开始
+      
+        {
+        LinearLayout,
+        orientation="vertical",
+        background="#ffffffff",
+        layout_width="fill";
+        layout_height="43%h";--内容高度
+        {
+          CardView; 
+          layout_marginTop="0.5dp"; 
+          layout_margin="10dp";
+          layout_gravity="center";
+          elevation="3dp";
+          layout_width="fill";
+          CardBackgroundColor="#FFffffff";
+          layout_height="fill";
+          radius="8dp";
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="10dp";
+            layout_marginLeft="15dp";
+            textSize="18sp";
+            text="BOOK v_2.6 更新详情   2019年4月17日",
+            textColor="#FF535353";
+          };
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="50dp";
+            layout_marginLeft="20dp";
+            textSize="16sp";
+            text="务必更新\n1.更换服务器旧版本停止服务（7月份服务器到期后自动停止服务）\n2.主页UI、图标重做\n3.接入okhttp3网络协议\n4.优化启动速度\n5.优化功能交互方式\n6.epub电子书下载可分享外链\n7.图文界面优化",
+            textColor="#aa000000";
+          };
+
+        };
+      };
+
 
     {
         LinearLayout,
