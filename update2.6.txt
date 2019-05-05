@@ -98,7 +98,7 @@ import "android.graphics.drawable.ColorDrawable"
                   layout_marginLeft="4%w";
                   {
                     TextView;--纽扣控件
-                    text="BOOK v_2.7 更新详情 \n1.修复全新UI重要BUG\n2.修复快应用阅读书架错误\n3.修复高分辨率机型下功能图标不水平对齐\n4.接入腾讯X5内核\n5.新增笔记功能\n6.新增视听空间\n7.新增微阅读平台\n8.更改部分功能入口";
+                    text="BOOK v_2.7 更新详情 \n1.修复全新UI重要BUG\n2.修复快应用阅读书架错误\n3.修复高分辨率机型下功能图标不水平对齐\n4.接入腾讯X5内核\n5.新增笔记功能\n6.新增视听空间\n7.新增微阅读平台\n8.调整部分功能入口";
                     textSize='17sp';--文字大小
                     textColor='#F3525252';--文字颜色
                     backgroundColor='#FFFFFFFF';--纽扣背景颜色
