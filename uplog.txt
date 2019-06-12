@@ -78,7 +78,7 @@ HG=
         orientation="vertical",
         background="#ffffffff",
         layout_width="fill";
-        layout_height="43%h";--内容高度
+        layout_height="23%h";--内容高度
         {
           CardView; 
           layout_marginTop="0.5dp"; 
@@ -115,7 +115,7 @@ HG=
         orientation="vertical",
         background="#ffffffff",
         layout_width="fill";
-        layout_height="43%h";--内容高度
+        layout_height="23%h";--内容高度
         {
           CardView; 
           layout_marginTop="0.5dp"; 
