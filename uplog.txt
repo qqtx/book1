@@ -449,6 +449,43 @@ HG=
 
         };
       };
+       {
+        LinearLayout,
+        orientation="vertical",
+        background="#ffffffff",
+        layout_width="fill";
+        layout_height="23%h";--内容高度
+        {
+          CardView; 
+          layout_marginTop="0.5dp"; 
+          layout_margin="10dp";
+          layout_gravity="center";
+          elevation="3dp";
+          layout_width="fill";
+          CardBackgroundColor="#FFffffff";
+          layout_height="fill";
+          radius="8dp";
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="10dp";
+            layout_marginLeft="15dp";
+            textSize="18sp";
+            text="BOOKx 更新详情   2018年9月24日",
+            textColor="#FF535353";
+          };
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="50dp";
+            layout_marginLeft="20dp";
+            textSize="16sp";
+            text="为低性能手机开发的极速版 ",
+            textColor="#aa000000";
+          };
+
+        };
+      };
       {
         LinearLayout,
         orientation="vertical",
@@ -471,7 +508,7 @@ HG=
             layout_marginTop="10dp";
             layout_marginLeft="15dp";
             textSize="16sp";
-            text="BOOK v1.7 更新详情  2018年10月1日",
+            text="BOOK v1.7 更新详情  2018年8月6日",
             textColor="#FF535353";
           };
           {
@@ -485,7 +522,9 @@ HG=
           };
 
         };
-      }; {
+      }; 
+      
+      {
         LinearLayout,
         orientation="vertical",
         background="#ffffffff",
@@ -507,7 +546,7 @@ HG=
             layout_marginTop="10dp";
             layout_marginLeft="15dp";
             textSize="16sp";
-            text="2018年9月20日",
+            text="2018年7月11日",
             textColor="#FF535353";
           };
           {
