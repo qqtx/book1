@@ -1,9 +1,7 @@
-if
-(网页链接:find("http://xiangkeyear.gz01.bdysite.com/x/happy/nill.html")) then
-  网页后退()
- 进入子页面("工具")
-end
-
+执行Shell("rm -rf /data/data/"..this.packageName.."/cache/")
+执行Shell("rm -rf /data/data/"..this.packageName.."/files/data/")
+执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
+执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
 
 
 
