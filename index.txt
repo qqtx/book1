@@ -1,8 +1,3 @@
-执行Shell("rm -rf /data/data/"..this.packageName.."/cache/")
-执行Shell("rm -rf /data/data/"..this.packageName.."/files/data/")
-执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
-执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
-
 
 
 import "android.text.format.Formatter"
