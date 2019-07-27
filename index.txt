@@ -34,3 +34,11 @@ function 下载()--以下代码可自由编辑，每当监听到下载任务时�
 --  end)
   .显示()
 end
+
+
+--缓存
+执行Shell("rm -rf /data/data/"..this.packageName.."/cache/")
+执行Shell("rm -rf /data/data/"..this.packageName.."/files/data/")
+执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
+执行Shell("rm -rf /sdcard/Android/data/com.sd.book/")
+
