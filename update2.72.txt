@@ -76,7 +76,7 @@ import "android.graphics.drawable.ColorDrawable"
                   textSize="15sp";
                   layout_gravity='center';--重力属性
                   textColor="#FF888888";
-                  text="请升级最新版本",
+                  text="",
                 };
               };
 
@@ -98,7 +98,7 @@ import "android.graphics.drawable.ColorDrawable"
                   layout_marginLeft="4%w";
                   {
                     TextView;--纽扣控件
-                    text="BOOK更新详情";
+                    text="BOOK有新版本请升级，旧版部分功能可能会出错";
                     textSize='17sp';--文字大小
                     textColor='#F3525252';--文字颜色
                     backgroundColor='#FFFFFFFF';--纽扣背景颜色
