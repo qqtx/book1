@@ -73,6 +73,45 @@ HG=
         layout_height="1dp";
       };
       -- -------------------按钮①开始
+          {
+        LinearLayout,
+        orientation="vertical",
+        background="#ffffffff",
+        layout_width="fill";
+        layout_height="23%h";--内容高度
+        {
+          CardView; 
+          layout_marginTop="0.5dp"; 
+          layout_margin="10dp";
+          layout_gravity="center";
+          elevation="3dp";
+          layout_width="fill";
+          CardBackgroundColor="#FFffffff";
+          layout_height="fill";
+          radius="8dp";
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="10dp";
+            layout_marginLeft="15dp";
+            textSize="18sp";
+            text="BOOK v_2.8 更新详情   2019年9月3日",
+            textColor="#FF535353";
+          };
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="50dp";
+            layout_marginLeft="20dp";
+            textSize="16sp";
+            text="本次更新了缓存生命周期、重做底层代码\n1.优化全局代码运行更流畅\n2.优化全局缓存生命周期\n3.修复部分机型偶尔弹出错误代码\n4.修复发布通知时部分机型收不到或关闭不掉\n5.更换失效资源\n6.更多-新增微阅读室、数字报\n7.更多新增中华诗文\n8.图文新增切换书源功能\n9.图文添加党建云、博看、高校资源\n10.优化作品解读播放模式\n11.全局部件的色彩重新调整\n12.本次更新主要提高稳定性",
+            textColor="#aa000000";
+          };
+
+        };
+      };
+        
+        
         {
         LinearLayout,
         orientation="vertical",
