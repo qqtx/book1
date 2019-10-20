@@ -1,4 +1,3 @@
-print("..")
 import "android.text.format.Formatter"
 function Too_young()
   webView.setDownloadListener{onDownloadStart=function(url,userAgent,contentDisposition,mimetype,contentLength)
