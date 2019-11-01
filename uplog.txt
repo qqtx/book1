@@ -73,7 +73,45 @@ HG=
         layout_height="1dp";
       };
       -- -------------------按钮①开始
+              {
+        LinearLayout,
+        orientation="vertical",
+        background="#ffffffff",
+        layout_width="fill";
+        layout_height="53%h";--内容高度
+        {
+          CardView; 
+          layout_marginTop="0.5dp"; 
+          layout_margin="10dp";
+          layout_gravity="center";
+          elevation="3dp";
+          layout_width="fill";
+          CardBackgroundColor="#FFffffff";
+          layout_height="fill";
+          radius="8dp";
           {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="10dp";
+            layout_marginLeft="15dp";
+            textSize="18sp";
+            text="BOOK v_2.9 更新详情   2019年11月1日",
+            textColor="#FF535353";
+          };
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="50dp";
+            layout_marginLeft="20dp";
+            textSize="16sp";
+            text="1.优化更多页面\n2.优化快应用图文\n3.新增连环画、少儿艺术库\n4.调整首页故事改为大学\n5.2.9版本新增升级内核版，适用于高配置手机\n6.旧版关闭",
+            textColor="#aa000000";
+          };
+
+        };
+      };
+        
+        {
         LinearLayout,
         orientation="vertical",
         background="#ffffffff",
