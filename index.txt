@@ -1,5 +1,5 @@
 
-
+print("请升级最新版")
 import "android.graphics.*"
 lay=
 {
