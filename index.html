@@ -1,3 +1,61 @@
 AA
 
+--此版本控制2.5——2.8版 2.9版本改index2.9
+import "android.graphics.*"
+lay=
+{
+  LinearLayout;
+  BackgroundColor="#FFFFFFFF";
+  orientation="vertical";
+  verticalScrollBarEnabled=false; 
+  layout_height="fill";
+
+  {
+    TextView;
+    layout_marginTop="8%h";
+    text="应用关闭通知"; 
+    textSize="20sp";
+    textColor='#f9320c';
+    layout_gravity="center";
+  };
+  {
+    TextView;
+    layout_marginTop="2%h";
+    text="请升级最新版\nBOOK V.2.9下载地址:www.balzac.cc/app"; 
+    textSize="17sp";
+    textColor='#1F2124'; 
+    layout_gravity="center";
+  };
+  {
+    Button;
+    layout_marginTop="2%h";
+    text="下载新版"; 
+    id="xz";
+    layout_width="100%w";
+
+  };
+
+  {
+    Button;
+    layout_marginTop="2%h";
+    text="退出程序"; 
+    id="tc";
+    layout_width="100%w";
+
+  };
+
+};
+activity.setContentView(loadlayout(lay))
+tc.onClick=function()
+  退出程序()
+end
+
+xz.onClick=function()
+  import "android.content.Intent"
+  import "android.net.Uri"
+  url="http://www.balzac.cc/app"
+  viewIntent = Intent("android.intent.action.VIEW",Uri.parse(url))
+  activity.startActivity(viewIntent)
+end
+
 AA
