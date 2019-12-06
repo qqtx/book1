@@ -73,6 +73,44 @@ HG=
         layout_height="1dp";
       };
       -- -------------------按钮①开始
+         {
+        LinearLayout,
+        orientation="vertical",
+        background="#ffffffff",
+        layout_width="fill";
+        layout_height="53%h";--内容高度
+        {
+          CardView; 
+          layout_marginTop="0.5dp"; 
+          layout_margin="10dp";
+          layout_gravity="center";
+          elevation="3dp";
+          layout_width="fill";
+          CardBackgroundColor="#FFffffff";
+          layout_height="fill";
+          radius="8dp";
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="10dp";
+            layout_marginLeft="15dp";
+            textSize="18sp";
+            text="BOOK v_3.0 更新详情   2019年11月28日",
+            textColor="#FF535353";
+          };
+          {
+            TextView;
+            layout_gravity="top|left";
+            layout_marginTop="50dp";
+            layout_marginLeft="20dp";
+            textSize="16sp";
+           text="1.全新的首页体验\n2.优化首页书架按钮\n3.首页添加公告信息\n4.每日阅读重做改版\n5.使用v2签名更快更安全\n快应用系列\n-阅读-\n6.优化登录页面、添加保存密码开关\n-图文-\n8.优化进入接口、更改-功能-图文锁定\n-新增-\n9.套装书籍\n10.在线课堂-公开课\n11.新增1901-2019年诺贝尔文学奖获得者作品\n11.支持应用分屏功能\n\n3.0依旧有两个版本:正式版和升级内核版\n升级内核版:app内的各种组件较新、体验好（首次打开后建议重启一下软件，能更好的解压内核）";
+            textColor="#aa000000";
+          };
+
+        };
+      };
+        
               {
         LinearLayout,
         orientation="vertical",
